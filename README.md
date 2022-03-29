@@ -1,2 +1,2 @@
 # Personal-Website
-This repository will be used for my personal website
+This repository is for my personal website
