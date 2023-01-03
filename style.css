@@ -5,6 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Lato, sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('images/mainBackground.png') no-repeat center center / cover;
+    background-color: #2f3e46;
 }
 
 #header h1 {
@@ -29,7 +30,7 @@ body {
 }
 
 #header p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #socialLinks {
@@ -43,12 +44,6 @@ body {
     text-decoration: none;
     padding: 0 20px;
     color: white;
-    transition-property: color;
-    transition-duration: 0.75s;
-}
-
-#socialLinks a:hover {
-    color: black;
 }
 
 nav a {
@@ -56,6 +51,41 @@ nav a {
     color: white;
     padding: 0 20px;
     font-size: 20px;
+}
+
+#socialLinks .fab:hover{
+    font-size:2.5em;
+    transition: 0.5s ease-out;
+}
+
+#socialLinks .fab:not( :hover ){
+    font-size:2em;
+    transition: 0.5s ease-out;
+}
+
+#resumeDownload {
+    background-color: #84a98c;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 25px;
+    margin: 20px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#resumeDownload:hover {
+    text-decoration: underline;
+    font-size: 1.75em;
+    transition: 0.5s ease-out;
+}
+
+#resumeDownload:not( :hover ) {
+    font-size:1.25em;
+    transition: 0.5s ease-out;
 }
 
 /* Main content */
@@ -85,7 +115,7 @@ nav a {
 #about {
     height: 100vh;
     width: 100vw;
-    background-color: #f79e02;
+    background-color: #354f52;
     padding: 7vh 0;
     text-align: center;
     display: flex;
@@ -97,16 +127,21 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #personalPhoto {
-    max-width: 50%;
-    max-height: 100vh;
+    max-height: 150%;
     margin-right: 3vw;
+    border: 4px solid #415b5e;
+    border-radius: 20px;
 }
 
 #aboutSectionContainer {
     text-align: left;
+    background-color: #415b5e;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 #aboutText {
@@ -218,15 +253,11 @@ nav a {
 /* Skills section */
 #skills {
     height: 60vh;
-    width: 150vw;
+    width: 100vw;
     background-color: rgb(86, 128, 233);
     padding: 3vh 0;
     text-align: center;
     color: white;
-}
-
-#skills .sectionContainer {
-    width: 50vw;
 }
 
 .skillBox {
