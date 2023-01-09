@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     font-family: Lato, sans-serif;
     overflow-x: hidden;
 }
@@ -127,7 +127,7 @@ nav a {
     width: 35%;
     height: 75vh;
     margin-right: 3vw;
-    background: url('images/personalPhoto2.jpg') no-repeat center center/cover;
+    background: url('images/personalPhoto.jpg') no-repeat center center/cover;
 }
 
 #aboutContent {
@@ -291,6 +291,7 @@ nav a {
 
 #projects {
     margin-top: 10vh;
+    margin-bottom: 10vh;
     text-align: center;
 }
 
@@ -302,7 +303,7 @@ nav a {
 }
 
 /* Template styles */
-.templates {
+#templates {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -368,6 +369,10 @@ nav a {
   line-height: 0;
 }
 
+.stretchToFit {
+    height: 100% !important;
+}
+
 .imgScale {
   transform: scale(2);
 }
@@ -393,6 +398,19 @@ nav a {
 }
 
 .templateContent a {
+    font-size: 15px;
+    text-decoration: none;
+    background-color: white;
+    margin-bottom: 1vh;
+    color: #552cbf;
+    border-radius: 20px;
+    padding: 1vh 1vw;
+    transition-property: background-color color padding;
+    transition-duration: 0.75s;
+}
+
+.templateContent p {
+    font-size: 15px;
     text-decoration: none;
     background-color: white;
     margin-bottom: 1vh;
@@ -410,9 +428,46 @@ nav a {
     padding: 1.5vh 1.5vw;
 }
 
+.templateContent p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: inherit;
+    color: white;
+    padding: 1.5vh 1.5vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descriptionBox {
+    padding: 2vh 2vw;
+    background-color: #415b5e;
+}
+
+.descriptionBox h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.descriptionBox p {
+    margin-top: 2vh;
+    text-align: left;
+    font-size: 15px;
+}
+
+.descriptionBox i:hover {
+    cursor: pointer;
+    font-size: 2.5em;
+    transition: 0.5s ease-out;
+}
+
+.descriptionBox i:not( :hover ){
+    font-size: 2em;
+    transition: 0.5s ease-out;
+}
+
 
 /* Resume and contact me section */
-#resumeContactForm {
-    height: 100vh;
-    background-color: #f79e02;
-}
