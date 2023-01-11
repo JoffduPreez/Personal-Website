@@ -1,4 +1,4 @@
-VANTA.NET({
+VANTA.WAVES({
     el: "#background",
     mouseControls: true,
     touchControls: true,
@@ -7,7 +7,5 @@ VANTA.NET({
     minWidth: 200.00,
     scale: 1.00,
     scaleMobile: 1.00,
-    color: "#84a98c",
-    backgroundColor: "#2f3e46",
-    // showDots: false
+    color: "#2f3e46",
 })
