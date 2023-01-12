@@ -27,7 +27,11 @@ templatesSection.addEventListener('click', function(e) {
                 <h2>Student Housing Web Parser</h2>
                 <i class="fa-solid fa-circle-xmark fa-2x" id="exit1"></i>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptates consectetur rerum libero, impedit perspiciatis sunt adipisci aliquam nisi, voluptate eum enim eveniet iure laborum ut esse, vero necessitatibus eos. Quidem voluptatibus vero minima et placeat! Rerum et sint quam? Assumenda voluptates beatae laboriosam reprehenderit repellendus corrupti ipsam nisi voluptate!</p>`
+            <ul>
+                <li>MERN web application which combines data from multiple student housing pages in order to reduce the difficulty of finding a house to rent</li>
+                <li>Includes user accounts, user notifications, the ability to filter house results based on search criteria, the ability to categorize and favorite search results</li>
+                <li>Uses a MongoDB database to save user account preferences, housing search criteria, and more</li>
+            </ul>`
         templatesSection.insertBefore(descriptionBox1, templatesSection.children[0])
     }
 
@@ -43,7 +47,11 @@ templatesSection.addEventListener('click', function(e) {
                 <h2>SVG Parser</h2>
                 <i class="fa-solid fa-circle-xmark fa-2x" id="exit2"></i>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptates consectetur rerum libero, impedit perspiciatis sunt adipisci aliquam nisi, voluptate eum enim eveniet iure laborum ut esse, vero necessitatibus eos. Quidem voluptatibus vero minima et placeat! Rerum et sint quam? Assumenda voluptates beatae laboriosam reprehenderit repellendus corrupti ipsam nisi voluptate!</p>`
+            <ul>
+                <li>Created a web application which allows users to upload, view, and edit images</li>
+                <li>Uses a MySQL database to store saved SVG images (in progress)</li>
+                <li>Utilized a C back end to parse SVG images, which connects to the client side through Node.js</li>
+            </ul>`
         templatesSection.insertBefore(descriptionBox2, templatesSection.children[1])
     }
 
@@ -59,7 +67,11 @@ templatesSection.addEventListener('click', function(e) {
                 <h2>Portfolio Management Program</h2>
                 <i class="fa-solid fa-circle-xmark fa-2x" id="exit3"></i>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptates consectetur rerum libero, impedit perspiciatis sunt adipisci aliquam nisi, voluptate eum enim eveniet iure laborum ut esse, vero necessitatibus eos. Quidem voluptatibus vero minima et placeat! Rerum et sint quam? Assumenda voluptates beatae laboriosam reprehenderit repellendus corrupti ipsam nisi voluptate!</p>`
+            <ul>
+                <li>Constructed a graphic user interface using Java to manage investments for users</li>
+                <li>Allows a user to buy, sell, and update stocks and mutual funds while tracking the gain of their portfolio and investments</li>
+                <li>Applied object-oriented programming to explore libraries which aided in creating an organized structure</li>
+            </ul>`
         templatesSection.insertBefore(descriptionBox3, templatesSection.children[2])
     }
 
@@ -75,7 +87,11 @@ templatesSection.addEventListener('click', function(e) {
                 <h2>Space Invaders</h2>
                 <i class="fa-solid fa-circle-xmark fa-2x" id="exit4"></i>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptates consectetur rerum libero, impedit perspiciatis sunt adipisci aliquam nisi, voluptate eum enim eveniet iure laborum ut esse, vero necessitatibus eos. Quidem voluptatibus vero minima et placeat! Rerum et sint quam? Assumenda voluptates beatae laboriosam reprehenderit repellendus corrupti ipsam nisi voluptate!</p>`
+            <ul>
+                <li>Implemented the classic arcade game "Space Invaders" using the Pygame library in Python</li>
+                <li>Utilized Pygame's built-in collision detection and event handling to handle player movements, alien movements, and laser-alien collisions</li>
+                <li>Incorporated sound effects and background music for an immersive gaming experience</li>
+            </ul>`
         templatesSection.appendChild(descriptionBox4)
     }
 
@@ -87,11 +103,11 @@ templatesSection.addEventListener('click', function(e) {
         template1.setAttribute('id', "template1")
         template1.innerHTML = `
         <div class="templateImage">
-            <img class="imgScale" src="images/item1.png" alt="Template">
+            <img class="stretchToFit" src="images/StudentHousingParser.jpg" alt="Template">
         </div>
         <div class="templateContent">
             <h2>Student Housing Web Parser</h2>
-            <a href="https://github.com/JoffduPreez/Space_Invaders">GitHub</a>
+            <a href="https://github.com/nedaskibildis/HousingParser">GitHub</a>
             <p class="projectDescription" id="projectDescription1">Project Description</p>
         </div>`
         templatesSection.insertBefore(template1, templatesSection.children[0])
@@ -105,14 +121,14 @@ templatesSection.addEventListener('click', function(e) {
         template2.setAttribute('id', "template2")
         template2.innerHTML = `
         <div class="templateImage">
-            <img class="imgScale" src="images/item2.png" alt="Template">
+            <img  src="images/SVGParser.png" alt="Template">
         </div>
         <div class="templateContent">
-            <h2>Student Housing Web Parser</h2>
-            <a href="https://github.com/JoffduPreez/Space_Invaders">GitHub</a>
+            <h2>SVG Parser</h2>
+            <a href="https://github.com/JoffduPreez/SVG-Parser">GitHub</a>
             <p class="projectDescription" id="projectDescription2">Project Description</p>
         </div>`
-        templatesSection.insertBefore(template2, document.getElementById("template3"))
+        templatesSection.insertBefore(template2, templatesSection.children[1])
     }
 
     if (e.target.id == "exit3") {
@@ -126,11 +142,11 @@ templatesSection.addEventListener('click', function(e) {
             <img class="stretchToFit" src="images//Portfolio Management Program.png" alt="Template">
         </div>
         <div class="templateContent">
-            <h2>Student Housing Web Parser</h2>
-            <a href="https://github.com/JoffduPreez/Space_Invaders">GitHub</a>
-            <p class="projectDescription" id="projectDescription2">Project Description</p>
+            <h2>Portfolio Management Program</h2>
+            <a href="https://github.com/JoffduPreez/Java-e-Portfolio">GitHub</a>
+            <p class="projectDescription" id="projectDescription3">Project Description</p>
         </div>`
-        templatesSection.insertBefore(template3, document.getElementById("template4"))
+        templatesSection.insertBefore(template3, templatesSection.children[2])
     }
 
     if (e.target.id == "exit4") {
@@ -144,13 +160,19 @@ templatesSection.addEventListener('click', function(e) {
             <img src="images/Space Invaders.png" alt="Template">
         </div>
         <div class="templateContent">
-            <h2>Student Housing Web Parser</h2>
+            <h2>Space Invaders</h2>
             <a href="https://github.com/JoffduPreez/Space_Invaders">GitHub</a>
-            <p class="projectDescription" id="projectDescription2">Project Description</p>
+            <p class="projectDescription" id="projectDescription4">Project Description</p>
         </div>`
         templatesSection.appendChild(template3)
     }
 
 
 })
+
+
+/* Issues:
+
+if you open the e-portfolio, then space invaders, and then close and re-open space invaders
+*/
 
