@@ -12,19 +12,19 @@ body {
     width: 100vw;
     font-family: 'Dosis', sans-serif;
     line-height: 1.6;
-    background-color: #354f52;
-    color: white;
+    background-color: #F4F4F4;
+    color: black;
 }
 
 /* Header */
 #header {
-    color: white;
+    /* color: #ffffff; */
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2f3e46;
+    background-color: #F4F4F4;
 }
 
 #header h1 {
@@ -42,31 +42,27 @@ body {
     justify-content: center;
 }
 
+i {
+    color: black !important;
+}
+
 #socialLinks a {
     text-decoration: none;
     padding: 0 20px;
-    color: white;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 0 20px;
-    font-size: 20px;
-}
-
-#socialLinks .fab:hover{
+i:hover{
     font-size:2.5em;
     transition: 0.5s ease-out;
 }
 
-#socialLinks .fab:not( :hover ){
+i:not( :hover ){
     font-size:2em;
     transition: 0.5s ease-out;
 }
 
 #resumeDownload {
-    background-color: #84a98c;
+    background-color: #552cbf;
     color: white;
     position: fixed;
     top: 0;
@@ -77,6 +73,7 @@ nav a {
     font-size: 20px;
     text-align: center;
     text-decoration: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 #resumeDownload:hover {
@@ -106,7 +103,6 @@ nav a {
 .title {
     /* margin-bottom: 1vh; */
     font-size: 60px;
-    color: white;
 }
 
 .basicText {
@@ -118,24 +114,24 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     padding: 5vh 15vw 0 15vw;
 }
 
 #personalPhoto {
-    border: 4px solid #415b5e;
     border-radius: 20px;
     width: 40%;
     height: 75vh;
     margin-right: 3vw;
     background: url('../images/personalPhoto.jpg') no-repeat center center/cover;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 #aboutContent {
     width: 60%;
-    background-color: #415b5e;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 #aboutText {
@@ -156,17 +152,17 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
     margin-top: 5vh;
 }
 
 #skillsContainer {
-    background-color: #415b5e;
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3vw;
     padding: 3vw;
     border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .skill {
@@ -231,7 +227,6 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
     margin-top: 10vh;
 }
 
@@ -242,11 +237,11 @@ nav a {
     justify-content: center;
     border-radius: 20px;
     padding: 2vh 4vw;
-    background-color: #415b5e;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .workExperienceBox {
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,7 +271,7 @@ nav a {
     width: 100%;
     align-self: center;
     height: 3px;
-    background-color: #354f52;
+    background-color: #552cbf;
     border-radius: 5px;
 }
 
@@ -300,8 +295,8 @@ nav a {
 }
 
 #workTermReport {
-    background-color: #84a98c;
-    color: white;
+    color: #ffffff;
+    background-color: #552cbf;
     padding: 10px 25px;
     margin-top: 1.5vh;
     border-radius: 50px;
@@ -364,7 +359,6 @@ nav a {
   opacity: 0;
   text-align: center;
   z-index: 1;
-  color: white;
   transform: translateY(-20%);
   transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
   transition-delay: 300ms;
@@ -470,11 +464,10 @@ nav a {
 
 .descriptionBox {
     padding: 2vh 2vw;
-    background-color: #415b5e;
+    background-color: #ffffff;
 }
 
 .descriptionBox h2 {
-    color: white;
     font-size: 30px;
 }
 
