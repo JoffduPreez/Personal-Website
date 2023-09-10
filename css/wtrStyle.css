@@ -28,6 +28,21 @@ body {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
+#backLinkWhite {
+    background-color: white;
+    color: #552cbf;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 25px;
+    margin: 20px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
 #backLink:hover {
     text-decoration: underline;
     font-size: 1.75em;
@@ -35,6 +50,17 @@ body {
 }
 
 #backLink:not( :hover ) {
+    font-size:1.25em;
+    transition: 0.5s ease-out;
+}
+
+#backLinkWhite:hover {
+    text-decoration: underline;
+    font-size: 1.75em;
+    transition: 0.5s ease-out;
+}
+
+#backLinkWhite:not( :hover ) {
     font-size:1.25em;
     transition: 0.5s ease-out;
 }
@@ -63,7 +89,7 @@ body {
 }
 
 #workTermReport {
-    background-color: #f4f4f4;
+    background-color: white;
     width: 65vw;
     padding: 5vh 5vw;
     border-radius: 20px;

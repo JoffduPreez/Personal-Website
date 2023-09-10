@@ -294,7 +294,7 @@ i:not( :hover ){
     text-align: center;
 }
 
-#workTermReport {
+.workTermReport {
     color: #ffffff;
     background-color: #552cbf;
     padding: 10px 25px;
@@ -305,13 +305,13 @@ i:not( :hover ){
     text-decoration: none;
 }
 
-#workTermReport:hover {
+.workTermReport:hover {
     text-decoration: underline;
     font-size: 1.5em;
     transition: 0.5s ease-out;
 }
 
-#workTermReport:not( :hover ) {
+.workTermReport:not( :hover ) {
     font-size:1.25em;
     transition: 0.5s ease-out;
 }
