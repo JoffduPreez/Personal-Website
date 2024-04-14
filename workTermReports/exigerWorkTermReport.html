@@ -7,10 +7,10 @@
     <script src="https://kit.fontawesome.com/9b0a4deeaf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Lato:wght@300&family=Open+Sans:ital,wght@0,400;1,300&display=swap"
     rel="stylesheet"/>
-    <link rel="stylesheet" href="css/wtrStyle.css">
+    <link rel="stylesheet" href="/css/wtrStyle.css">
     <title>Exiger WTR</title>
 </head>
-<body id="background">
+<body id="background-fog">
     <a id="backLink" href="/index.html">Home Page</a>
 
     <div id="container">
@@ -71,10 +71,21 @@
         </section>
 
     </div>
-    
-    <script src="javascript/vanta.net.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
-    <script src="javascript/dynamicBackground.js"></script>
+
+    <script src="/javascript/dynamicBackgrounds/three.r134.min.js"></script>
+    <script src="/javascript/dynamicBackgrounds/vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+            el: "#background-fog",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: "#f4f4f4",
+            midtoneColor: "#552cbf",
+            lowlightColor: "#f4f4f4",
+        })
+    </script>
 </body>
 </html>

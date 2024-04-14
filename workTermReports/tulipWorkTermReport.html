@@ -7,11 +7,11 @@
     <script src="https://kit.fontawesome.com/9b0a4deeaf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Lato:wght@300&family=Open+Sans:ital,wght@0,400;1,300&display=swap"
     rel="stylesheet"/>
-    <link rel="stylesheet" href="css/wtrStyle.css">
+    <link rel="stylesheet" href="/css/wtrStyle.css">
     <title>Tulip Retail WTR</title>
 </head>
-<body id="background">
-    <a id="backLinkWhite" href="/">Home Page</a>
+<body id="background-waves">
+    <a id="backLinkWhite" href="/index.html">Home Page</a>
 
     <div id="container">
         <section id="workTermReport">
@@ -53,7 +53,6 @@
                     <li>Supported the development of a powerful omnichannel checkout system at Tulip Retail, actively contributing to the creation of a robust and seamless customer experience</li>
                     <li>Extended the back-end API of the checkout system at Tulip Retail by implementing new endpoints, improving system capabilities, and facilitating seamless data interaction</li>
                     <li>Collaborated closely with diverse team members to develop and maintain the codebase, fostering effective communication and teamwork skills</li>
-                    <li>Explored ways to rotate IP addresses using proxy servers in order to effectively scrape web data</li>
                     <li>Addressed a wide range of software issues, including routine bug fixes such as managing error logs and resolving high-priority client-specific bugs, ensuring optimal system performance</li>
                 </ul>
 
@@ -70,10 +69,20 @@
 
     </div>
     
-    <script src="javascript/vanta.net.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
-    <script src="javascript/dynamicBackground2.js"></script>
+    <script src="/javascript/dynamicBackgrounds/three.r134.min.js"></script>
+    <script src="/javascript/dynamicBackgrounds/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#background-waves",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: "#8e85a6",
+        })
+    </script>
 </body>
 </html>
