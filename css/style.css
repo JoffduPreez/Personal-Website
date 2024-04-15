@@ -18,7 +18,6 @@ body {
 
 /* Header */
 #header {
-    /* color: #ffffff; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,15 +27,15 @@ body {
 }
 
 #header h1 {
-    font-size: 80px;
+    font-size: 8vw;
 }
 
 #header p {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 #socialLinks {
-    margin: 12px 0 10px 0;
+    margin: 1vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,16 +47,16 @@ i {
 
 #socialLinks a {
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 1.5vw;
 }
 
 i:hover{
-    font-size:2.5em;
+    font-size: 3.5vw;
     transition: 0.5s ease-out;
 }
 
 i:not( :hover ){
-    font-size:2em;
+    font-size: 2.5vw;
     transition: 0.5s ease-out;
 }
 
@@ -67,10 +66,9 @@ i:not( :hover ){
     position: fixed;
     top: 0;
     right: 0;
-    padding: 10px 25px;
-    margin: 20px 20px;
-    border-radius: 50px;
-    font-size: 20px;
+    padding: 0.5vw 1.75vw;
+    margin: 1.5vw 1.5vw;
+    border-radius: 5vw;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -78,12 +76,12 @@ i:not( :hover ){
 
 #resumeDownload:hover {
     text-decoration: underline;
-    font-size: 1.75em;
+    font-size: 2vw;
     transition: 0.5s ease-out;
 }
 
 #resumeDownload:not( :hover ) {
-    font-size:1.25em;
+    font-size: 1.5vw;
     transition: 0.5s ease-out;
 }
 
@@ -101,12 +99,7 @@ i:not( :hover ){
 }
 
 .title {
-    /* margin-bottom: 1vh; */
-    font-size: 60px;
-}
-
-.basicText {
-    font-size: 18px;
+    font-size: 4vw;
 }
 
 /* About section */
@@ -118,9 +111,9 @@ i:not( :hover ){
 }
 
 #personalPhoto {
-    border-radius: 20px;
+    border-radius: 1.5vw;
     width: 40%;
-    height: 75vh;
+    height: 50vw;
     margin-right: 3vw;
     background: url('../images/personalPhoto.jpg') no-repeat center center/cover;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -129,20 +122,20 @@ i:not( :hover ){
 #aboutContent {
     width: 60%;
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 2vw;
+    border-radius: 1.5vw;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 #aboutText {
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
+    letter-spacing: 0.01vw;
+    line-height: 1.75vw;
+    font-size: 1.25vw;
 }
 
 #aboutPersonalOccupation {
-    margin-bottom: 2vh;
-    font-size: 25px;
+    margin-bottom: 1.5vh;
+    font-size: 2vw;
 }
 
 
@@ -161,7 +154,7 @@ i:not( :hover ){
     grid-template-columns: repeat(5, 1fr);
     gap: 3vw;
     padding: 3vw;
-    border-radius: 20px;
+    border-radius: 1.5vw;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -173,7 +166,7 @@ i:not( :hover ){
 }
 
 .skillIcon {
-    height: 20vh;
+    height: 10vw;
     width: 10vw;
 }
 
@@ -215,19 +208,19 @@ i:not( :hover ){
 
 .skillText {
     margin-top: 2vh;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
 /* Work experience section */
 #workExperience {
-    /* height: 80vh; */
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 10vh;
+    font-size: 1.1vw;
 }
 
 #workExperienceContainer {
@@ -235,7 +228,7 @@ i:not( :hover ){
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 1.5vw;
     padding: 2vh 4vw;
     background-color: #ffffff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -270,53 +263,53 @@ i:not( :hover ){
 #divider {
     width: 100%;
     align-self: center;
-    height: 3px;
+    height: 0.2vw;
     background-color: #552cbf;
-    border-radius: 5px;
+    border-radius: 5vw;
 }
 
 .workExperienceHeading {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin: 0.75vw 0;
+    font-size: 1.25vw;
 }
 
 .companyName {
-    font-size: 40px;
-    margin-bottom: 0;
-    line-height: 1.25;
-}
-
-#projects {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    text-align: center;
+    font-size: 2.75vw;
+    margin-bottom: 0.75vw;
+    line-height: 1.75vw;
 }
 
 .workTermReport {
     color: #ffffff;
     background-color: #552cbf;
-    padding: 10px 25px;
+    padding: 0.5vw 1.75vw;
     margin-top: 1.5vh;
-    border-radius: 50px;
-    font-size: 20px;
+    border-radius: 5vw;
     text-align: center;
     text-decoration: none;
 }
 
 .workTermReport:hover {
     text-decoration: underline;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     transition: 0.5s ease-out;
 }
 
 .workTermReport:not( :hover ) {
-    font-size:1.25em;
+    font-size:1.25vw;
     transition: 0.5s ease-out;
 }
 
 /* Personal projects section */
+#projects {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
 #templatesContainer {
     width: 60vw;
     margin: auto;
@@ -413,30 +406,30 @@ i:not( :hover ){
 
 .templateContent h2 {
     color: white;
-    font-size: 30px;
+    font-size: 1.75vw;
     margin-bottom: 1vh;
 }
 
 .templateContent a {
-    font-size: 15px;
+    font-size: 1.1vw;
     text-decoration: none;
     background-color: white;
     margin-bottom: 1vh;
     color: #552cbf;
-    border-radius: 20px;
-    padding: 1vh 1vw;
+    border-radius: 1.5vw;
+    padding: 0.75vh 0.75vw;
     transition-property: background-color color padding;
     transition-duration: 0.75s;
 }
 
 .templateContent p {
-    font-size: 15px;
+    font-size: 1.1vw;
     text-decoration: none;
     background-color: white;
     margin-bottom: 1vh;
     color: #552cbf;
-    border-radius: 20px;
-    padding: 1vh 1vw;
+    border-radius: 1.5vw;
+    padding: 0.75vh 0.75vw;
     transition-property: background-color color padding;
     transition-duration: 0.75s;
 }
@@ -468,23 +461,23 @@ i:not( :hover ){
 }
 
 .descriptionBox h2 {
-    font-size: 30px;
+    font-size: 1.75vw;
 }
 
 .descriptionBox li {
     margin-top: 2vh;
     text-align: left;
-    font-size: 15px;
+    font-size: 1.1vw;
 }
 
 .descriptionBox i:hover {
     cursor: pointer;
-    font-size: 2.5em;
+    font-size: 2.5vw;
     transition: 0.5s ease-out;
 }
 
 .descriptionBox i:not( :hover ){
-    font-size: 2em;
+    font-size: 1.75vw;
     transition: 0.5s ease-out;
 }
 
